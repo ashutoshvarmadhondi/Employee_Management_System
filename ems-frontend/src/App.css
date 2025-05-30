@@ -1,0 +1,26 @@
+/* Ensure everything uses full height */
+html, body, #root, .page-container {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex layout to keep footer pushed to the bottom */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full screen height */
+}
+
+/* This wraps the actual page content and grows to fill space */
+.content-wrap {
+  flex: 1;
+}
+
+/* Footer styling */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+}
