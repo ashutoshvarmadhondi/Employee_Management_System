@@ -1,8 +1,45 @@
-# Project Title: Full Stack Employee Management System
+# Full Stack Employee Management System
 # Tech Stack:
     Frontend: Vite + ReactJS
     Backend: Java Spring Boot
     Database: MySQL
+# Prerequisites: 
+    Front End:
+     - VS Code
+     - Node JS
+     - Npm(use this cmd "npm install" in your terminal or command prompt)
+    Back End:
+     - STS/Eclipse/Intellij any of the tool 
+    Database
+     - MySQL workbench 
+     - MYSQL Server
+
+Make sure you install all this and configure your database(MySQL workbench and MYSQL Server)
+know the DB_URL, DB USER_NAME, DB_PASSWORD
+
+# Downloading/cloning the projec
+  1. Download the project using <>code and download the zip(if you have done this you can skip 2 and 3)
+  2. Or clone the project by using git copy the url from the code
+  3. Use one from HTTPS or SSH or GitHub CLI to clone
+
+# How to Run the code?
+    - In the front end open the project of ems-front-end
+    - Inside the ems-front-end run the "npm install" in the terminal for node_modules
+    - you should be able to see node_modules folder 
+    - Run the cmd in your terminal as "npm run dev"
+
+    - In the backend open the project of ems-back-end
+    - right click of the project and update the project(this will make sure that all the maven dependencies are installed and up to date)
+    - create a file of application.properties and configure the credentials with your database(template is given in the file applicaiton-sample.properties)
+    - Give your DB URL, Username and password to the application.properties and ensure that all the properties are present which are in application-sample.properties
+    - Go to src/main/java > com.ems.backend > EmsBackendApplication.java
+    - Right click on EmsBackendApplication.java > run as > SpringbootApp(Run only after configuring the application.properties make sure you have given DB_URL, DB USER_NAME, DB_PASSWORD)
+
+Insert your data from the front-end, It will use the backend services and your data will be saved in SQL 
+     
+# Product Requirements Document:
+
+
 
 # 1. Objective / Purpose
 To develop a responsive and scalable Employee Management System that enables users to manage employee data using a modern frontend (React + Vite), a robust backend (Spring Boot), and persistent storage (MySQL). The system will be RESTful, secure, and modular — ready for both personal and professional deployment.
@@ -54,18 +91,18 @@ The system will provide:
 
     Meaningful error messages displayed to users
 
-🟢 P4 – Search and Filter 
+# 🟢 P4 – Search and Filter 
     Search by name, email, or ID
 
 
 # 4. User Stories / Use Cases
     Priority	Role	User Story
-      P1	Admin - 	As an admin, I want to add new employees with complete details so I can maintain staff records.
-      P1	Admin - 	As an admin, I want to update or delete employee data so I can manage changes.
-      P2	Admin - 	As an admin, I want a clean dashboard to view all employees.
-      P3	User - 	  As a user, I want input validations to prevent errors during submission.
-      P4	User - 	  As a user, I want to search for employees quickly for details.
-
+      P1	        Admin  	As an admin, I want to add new employees with complete details so I can maintain staff records.
+      P1	        Admin  	As an admin, I want to update or delete employee data so I can manage changes.
+      P2	        Admin  	As an admin, I want a clean dashboard to view all employees.
+      P3	        User   	As a user, I want input validations to prevent errors during submission.
+      P4	        User   	As a user, I want to search for employees quickly for details.
+ 
 # 5. Technical Requirements
       Frontend (Vite + ReactJS)
       React 18+, Vite, React Router, Axios
@@ -119,10 +156,4 @@ The system will provide:
 
 
 
-# Screenshots
 
-<img src = "Assets/Screenshot 2025-06-03 at 1.02.04 PM.png" alt="list of employees" width="500">
-
-<img src = "Assets/Screenshot 2025-06-03 at 1.02.20 PM.png" alt="list of employees" width="500">
-
-<img src = "Assets/Screenshot 2025-06-03 at 1.26.05 PM.png" alt="list of employees" width="500">
